@@ -7,8 +7,14 @@
 
 ## Setup repo for Development
 
+[Install Deno](https://docs.deno.com/runtime/getting_started/installation/)
+
 Install Dependencies
-```zsh
+```bash
+# Install modules
 deno install --allow-scripts
+
+# Develop Site
+deno run dev
 ```
 
