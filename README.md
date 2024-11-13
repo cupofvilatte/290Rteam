@@ -9,15 +9,24 @@
 
 1. [Install Deno](https://docs.deno.com/runtime/getting_started/installation/)
 
-2. Install Dependencies
+2. Install Dependencies and Modules
 ```bash
-# Install modules
 deno install --allow-scripts
 ```
 
 3. Run in development mode
 ```bash
-# Develop Site
 deno run dev
 ```
 
+## Testing Deployment and Minification
+
+1. Run Build Command
+```bash
+deno run build
+```
+
+2. Run Preview Command
+```bash
+deno run preview
+```
