@@ -1,0 +1,18 @@
+@keyframes propellerFall {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(50vh) rotate(180deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+  }
+  
+  @keyframes swayFall {
+    0% { transform: translateY(0) translateX(0); }
+    25% { transform: translateY(25vh) translateX(-10px); }
+    50% { transform: translateY(50vh) translateX(10px); }
+    75% { transform: translateY(75vh) translateX(-10px); }
+    100% { transform: translateY(100vh) translateX(0); }
+  }
+  
+  @keyframes straightFall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+  }
