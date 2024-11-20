@@ -5,28 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gratitude</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="scripts/pages/gratitude.mts" type="module" defer></script>
   </head>
-  <body>
-    <header></header>
-    <h1>Gratitude</h1>
+  <body id="gratitude-page">
+    <header>
+      <!-- Dynamically Inserted Header Here -->
+    </header>
+    <h1>Gratitude Tree</h1>
 
     <main>
-      <label for="gratitude-input"
-        >Type words which you are grateful for:</label
-      >
-      <textarea
-        rows="10"
-        cols="50"
-        aria-describedby="messageHint"
-        placeholder="Words will be split by commas. Only single words allowed will be put into the cloud."
-      >
-      </textarea>
+        <label for="gratitude-input">Type Something you are grateful for:</label>
+        <input id="gratitude-input" name="gratitude-input" placeholder="one word at a time"></input>
+        <button id="add-word">Add Word</button>
+        <ol class="gratitude-list">
+          <!-- List to show submitted Itemes -->
+        </ol>
+  
+        <button id="gratitude-submit">Submit List</button>
 
-      <button id="gratitude-submit">Add to Cloud</button>
     </main>
 
+<!-- REMOVE LATER -->
+    <style>
+      #leaf-area {
+        width: 800px;
+        height: 600px;
+        background-color: lightgreen;
+      }
+    </style>    
+<!-- END REMOVE -->
+ 
+    <div id="leaf-area">
+      <!-- Leaves Dynamically Animated Here -->
+    </div>
 
-    <footer></footer>
+    <footer>
+      <!-- Dynamically Insert Footer Here -->
+    </footer>
   </body>
 </html>
 

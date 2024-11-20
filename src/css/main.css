@@ -1,11 +1,11 @@
 @layer base, layout, utilities, components;
 
 @import "base/reset.css" layer(base);
-@import "base/variables.css" layer(base);
-@import "base/typography.css" layer(base);
+/* @import "base/variables.css" layer(base); */
+/* @import "base/typography.css" layer(base); */
 @import "base/global.css" layer(base);
 
-@import "layout/header.css" layer(layout);
-@import "layout/footer.css" layer(layout);
+/* @import "layout/header.css" layer(layout); */
+/* @import "layout/footer.css" layer(layout); */
 
 /* Add more layers as needed */
