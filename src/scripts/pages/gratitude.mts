@@ -1,6 +1,5 @@
 import { initLeafAnimation } from "../features/leaves/leaves.mts";
-import { updateGratitudeList } from "../features/leaves/wordStore.mts";
-import { initWordAdder } from "../features/leaves/wordAdder.mts";
+import { initGratitudeTracker, updateGratitudeList } from "../features/leaves/wordStore.mts";
 
 
 (function renderPage() {
@@ -11,7 +10,7 @@ import { initWordAdder } from "../features/leaves/wordAdder.mts";
 (function initListeners() {
     (document.getElementById("gratitude-submit") as HTMLButtonElement)
         .addEventListener('click', updateGratitudeList);
-    initWordAdder();
+    initGratitudeTracker();
 
 })();
 

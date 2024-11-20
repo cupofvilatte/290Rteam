@@ -1,7 +1,7 @@
 import { addListItem } from "../../templates/gratitude.mts";
 
 const wordInput = document.getElementById("gratitude-input") as HTMLButtonElement;
-const wordList = document.querySelector('.gratitude-list') as HTMLOListElement
+const wordList = document.querySelector('.gratitude-list') as HTMLOListElement;
 
 function initWordAdder() {
     (document.getElementById("add-word") as HTMLButtonElement)
@@ -9,12 +9,20 @@ function initWordAdder() {
     wordInput.addEventListener('keydown', (event: KeyboardEvent) => {
         if (event.key === "Enter") addWord();
     });
-    wordInput.addEventListener("click", () => wordInput.value = '')
+    wordInput.addEventListener("click", () => wordInput.value = '');
 }
 
 function addWord() {
+    if (wordInput.value === '') return;
     addListItem(wordList, wordInput.value);
     wordInput.value = '';
 }
 
-export { initWordAdder }
+function popList(): string[] {
+    const spans = wordList.querySelectorAll("span");
+    const words: string[] = [...spans].map(li => li.innerText.toLowerCase());
+    wordList.innerHTML = '';
+    return words;
+}
+
+export { initWordAdder, popList }
