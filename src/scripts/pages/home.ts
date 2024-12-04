@@ -17,7 +17,7 @@ export class HomePage {
         // Create header section
         const header = document.createElement('header');
         header.innerHTML = `
-            <h1 class="title">🦖 Dino Thanksgiving 🦕</h1>
+            <h1 class="title"> Deno Thanksgiving </h1>
             <p class="subtitle">Join our prehistoric celebration!</p>
         `;
 
