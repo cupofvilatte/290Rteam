@@ -1,17 +1,17 @@
-import { initLeafAnimation } from "../features/leaves/leaves.mts";
-import { updateGratitudeList } from "../features/leaves/wordStore.mts";
-import { initWordAdder } from "../features/leaves/wordAdder.mts";
+import { initLeafAnimation } from "../features/leaves/leafAnimation.mts";
+import { initGratitudeTracker, updateGratitudeList } from "../features/leaves/leaves.mts";
 
 
 (function renderPage() {
-    // (document.querySelector('textarea') as HTMLTextAreaElement).innerText = '';
+    initGratitudeTracker();
     initLeafAnimation();
+    
+    
 })();
 
 (function initListeners() {
     (document.getElementById("gratitude-submit") as HTMLButtonElement)
         .addEventListener('click', updateGratitudeList);
-    initWordAdder();
 
 })();
 
