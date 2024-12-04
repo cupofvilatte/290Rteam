@@ -1,0 +1,18 @@
+
+#leaf-area {
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    height: 600px;
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/31/22/47/tree-2027899_1280.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid green;
+}
+
+#leaf-area span {
+    position: absolute;
+    top: 175px;
+    animation: swayFall 5s linear forwards;
+}

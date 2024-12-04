@@ -18,7 +18,7 @@ function listItemTemplate(word: string): string {
             <span>${word}</span>
             <button class="delete-btn">X</button>
         </li>
-    `
+    `;
 }
 
 
