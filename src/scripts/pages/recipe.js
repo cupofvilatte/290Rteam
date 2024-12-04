@@ -3,7 +3,12 @@ const baseUrl = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=';
 const countries = ['American', 'British']; // Filter by American and British cuisines
 
 async function fetchFoodsByCountry() {
-  const container = document.getElementById('meals-container');
+  const container = document.querySelector('.recipe-container'); // Use querySelector for a single element
+  if (!container) {
+    console.error('No element with class "recipe-container" found.');
+    return;
+  }
+
   container.innerHTML = 'Loading...';
 
   try {
@@ -29,7 +34,12 @@ async function fetchFoodsByCountry() {
 }
 
 function displayMeals(meals) {
-  const container = document.getElementById('meals-container');
+  const container = document.querySelector('.recipe-container'); // Ensure single element
+  if (!container) {
+    console.error('No element with class "recipe-container" found.');
+    return;
+  }
+
   container.innerHTML = ''; // Clear previous content
 
   meals.forEach(meal => {
