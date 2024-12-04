@@ -1,0 +1,172 @@
+[
+    {
+      "question": "When is Thanksgiving celebrated in the United States?",
+      "options": {
+        "A": "The first Thursday of November",
+        "B": "The second Monday of November",
+        "C": "The fourth Thursday of November",
+        "D": "The last Friday of November"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "What is a traditional Thanksgiving dish?",
+      "options": {
+        "A": "Sushi",
+        "B": "Turkey",
+        "C": "Spaghetti",
+        "D": "Tacos"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "Which U.S. President declared Thanksgiving a national holiday?",
+      "options": {
+        "A": "George Washington",
+        "B": "Abraham Lincoln",
+        "C": "Thomas Jefferson",
+        "D": "Franklin D. Roosevelt"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "How long was the first Thanksgiving?",
+      "options": {
+        "A": "10 Days",
+        "B": "3 Days",
+        "C": "1 Day",
+        "D": "5 Days"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "How many places in the US are named Turkey?",
+      "options": {
+        "A": "3",
+        "B": "1",
+        "C": "2",
+        "D": "0"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "What Native American tribe was present at the first Thanksgiving?",
+      "options": {
+        "A": "Cherokee",
+        "B": "Navajo",
+        "C": "Wampanoag",
+        "D": "Sioux"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Which department store is known for sponsoring the famous Thanksgiving Day Parade in New York City?",
+      "options": {
+        "A": "Macy's",
+        "B": "Saks Fifth Avenue",
+        "C": "Bloomingdale's",
+        "D": "Nordstrom"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "What year was the first Macy's Thanksgiving Day Parade?",
+      "options": {
+        "A": "1924",
+        "B": "1910",
+        "C": "1945",
+        "D": "1930"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which state produces the most turkeys in the U.S.?",
+      "options": {
+        "A": "Minnesota",
+        "B": "California",
+        "C": "Arkansas",
+        "D": "North Carolina"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "What is the name of the ship that brought the Pilgrims to America?",
+      "options": {
+        "A": "Mayflower",
+        "B": "Santa Maria",
+        "C": "Pinta",
+        "D": "Nina"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which U.S. President started the tradition of pardoning a turkey?",
+      "options": {
+        "A": "Ronald Reagan",
+        "B": "John F. Kennedy",
+        "C": "George H. W. Bush",
+        "D": "Harry Truman"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "What is the average weight of a Thanksgiving turkey?",
+      "options": {
+        "A": "8 pounds",
+        "B": "16 pounds",
+        "C": "20 pounds",
+        "D": "25 pounds"
+      },
+      "answer": "B"
+    },
+    {
+      "question": "In what year did Congress make Thanksgiving an official federal holiday?",
+      "options": {
+        "A": "1863",
+        "B": "1870",
+        "C": "1941",
+        "D": "1950"
+      },
+      "answer": "C"
+    },
+    {
+      "question": "Which traditional Thanksgiving dessert traces its origins to the Pilgrims?",
+      "options": {
+        "A": "Pumpkin Pie",
+        "B": "Apple Pie",
+        "C": "Pecan Pie",
+        "D": "Cranberry Tart"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "Which bird did Benjamin Franklin suggest should be the national bird of the United States instead of the Bald Eagle?",
+      "options": {
+        "A": "Turkey",
+        "B": "Hawk",
+        "C": "Swan",
+        "D": "Owl"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "What country also celebrates Thanksgiving in October?",
+      "options": {
+        "A": "Canada",
+        "B": "Mexico",
+        "C": "Australia",
+        "D": "United Kingdom"
+      },
+      "answer": "A"
+    },
+    {
+      "question": "What is the gelatinous, can-shaped dish often served at Thanksgiving?",
+      "options": {
+        "A": "Jello Salad",
+        "B": "Cranberry Sauce",
+        "C": "Aspic",
+        "D": "Mousse"
+      },
+      "answer": "B"
+    }
+]
