@@ -8,6 +8,7 @@
 
 /* @import "layout/header.css" layer(layout); */
 /* @import "layout/footer.css" layer(layout); */
+@import "layout/quiz.css" layer(layout);
 
 @import "components/leaves.css" layer(components);
 
