@@ -1,0 +1,154 @@
+/* General reset */
+body, h1, form, fieldset, legend, label, button, span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+    background-color: #fef5e7; /* Pale yellow for warmth */
+    color: #2c3e50; /* Deep blue-gray for text */
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2.5rem;
+    color: #16a085; /* Teal color */
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px #7f8c8d; /* Subtle shadow */
+  }
+  
+  /* Quiz Container */
+  .quiz-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+  }
+  
+  /* Quiz Section */
+  .quiz-section {
+    flex: 3; /* Takes more space */
+  }
+  
+  #quiz-form {
+    background-color: #ffffff; /* White background for contrast */
+    border: 3px solid #27ae60; /* Green border */
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Fieldset */
+  fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+  
+  legend {
+    font-size: 1.25rem;
+    color: #2980b9; /* Bright blue */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Labels */
+  label {
+    font-size: 1rem;
+    color: #34495e; /* Soft gray */
+    display: block;
+    cursor: pointer;
+  }
+  
+  label:hover {
+    color: #e74c3c; /* Red highlight on hover */
+  }
+  
+  /* Radio inputs */
+  input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  /* Results Span */
+  #myresults {
+    display: block;
+    font-size: 1.25rem;
+    color: #8e44ad; /* Purple for emphasis */
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Submit Button */
+  button.view-results {
+    background-color: #e67e22; /* Vibrant orange */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.view-results:hover {
+    background-color: #d35400; /* Darker orange */
+  }
+  
+  /* Dinosaur Images Section */
+  .dino-images {
+    flex: 2; /* Takes less space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .dino-images img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #27ae60; /* Green border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dino-images img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .quiz-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .quiz-section, .dino-images {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button.view-results {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
