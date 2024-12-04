@@ -48,13 +48,20 @@ function displayMeals(meals) {
 
     mealDiv.innerHTML = `
       <h2>${meal.strMeal}</h2>
-      <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
-      <p><a href="https://www.themealdb.com/meal.php?c=${meal.idMeal}" target="_blank">View Recipe</a></p>
+      <div>
+        <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+      </div>
+      <p>Discover this delicious recipe! <a href="https://www.themealdb.com/meal.php?c=${meal.idMeal}" target="_blank">View Recipe</a></p>
     `;
 
     container.appendChild(mealDiv);
+
+    // Add click event to show modal
+    mealDiv.addEventListener('click', () => showModal(meal.idMeal, meal.strMeal, meal.strMealThumb));
   });
 }
+
+
 
 // Fetch meals on page load
 fetchFoodsByCountry();
