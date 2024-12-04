@@ -1,56 +1,80 @@
-// countdown_to_thanksgiving.ts
+// src/scripts/features/countdown/thanksgivingClock.ts
 
-const getNextThanksgiving = () => {
-  const now = new Date();
-  const year = now.getFullYear();
-  const november = 10; // November is the 11th month, but getMonth() returns 0-indexed months
-  const fourthThursday = 4; // Thanksgiving is the fourth Thursday
+export interface CountdownTime {
+  days: number;
+  hours: number;
+  minutes: number; 
+  seconds: number;
+  isComplete: boolean;
+}
 
-  // Start from November 1st
-  const firstOfNovember = new Date(year, november, 1);
+export class ThanksgivingCountdown {
+  private targetDate: Date;
+  private intervalId?: number;
 
-  // Get the day of the week of November 1st
-  const dayOfWeek = firstOfNovember.getDay();
-
-  // Calculate the date of the first Thursday in November
-  const firstThursday = 1 + ((11 - dayOfWeek) % 7);
-
-  // Calculate the date of the fourth Thursday in November
-  const thanksgivingDate = firstOfNovember.getDate() + firstThursday + (fourthThursday - 1) * 7;
-
-  const thanksgiving = new Date(year, november, thanksgivingDate);
-
-  // If today's date is after this year's Thanksgiving, calculate for next year
-  if (now.getTime() > thanksgiving.getTime()) {
-    return new Date(year + 1, november, thanksgivingDate);
+  constructor() {
+    this.targetDate = this.getNextThanksgiving();
   }
 
-  return thanksgiving;
-};
+  private getNextThanksgiving(): Date {
+    const now = new Date();
+    const year = now.getFullYear();
+    const november = 10; 
+    const fourthThursday = 4;
 
-const countdownToThanksgiving = () => {
-  const targetDate = getNextThanksgiving();
-  console.log(`Next Thanksgiving is on: ${targetDate.toDateString()}`);
+    const firstOfNovember = new Date(year, november, 1);
+    const dayOfWeek = firstOfNovember.getDay();
+    const firstThursday = 1 + ((11 - dayOfWeek) % 7);
+    const thanksgivingDate = firstOfNovember.getDate() + firstThursday + (fourthThursday - 1) * 7;
+    
+    const thanksgiving = new Date(year, november, thanksgivingDate);
+    
+    return now.getTime() > thanksgiving.getTime() 
+      ? new Date(year + 1, november, thanksgivingDate)
+      : thanksgiving;
+  }
 
-  const updateCountdown = () => {
+  public getTimeRemaining(): CountdownTime {
     const now = new Date().getTime();
-    const timeDifference = targetDate.getTime() - now;
-
-    if (timeDifference <= 0) {
-      console.log("Happy Thanksgiving!");
-      clearInterval(intervalId);
-      return;
+    const timeDiff = this.targetDate.getTime() - now;
+    
+    if (timeDiff <= 0) {
+      return {
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+        isComplete: true
+      };
     }
 
-    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    return {
+      days: Math.floor(timeDiff / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      minutes: Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60)),
+      seconds: Math.floor((timeDiff % (1000 * 60)) / 1000),
+      isComplete: false
+    };
+  }
 
-    console.log(`Time left: ${days}d ${hours}h ${minutes}m ${seconds}s`);
-  };
+  public startCountdown(callback: (time: CountdownTime) => void) {
+    this.intervalId = setInterval(() => {
+      const timeLeft = this.getTimeRemaining();
+      callback(timeLeft);
+      
+      if (timeLeft.isComplete) {
+        this.stopCountdown();
+      }
+    }, 1000);
+  }
 
-  const intervalId = setInterval(updateCountdown, 1000);
-};
+  public stopCountdown() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
 
-countdownToThanksgiving();
+  public getTargetDate(): Date {
+    return this.targetDate;
+  }
+}
