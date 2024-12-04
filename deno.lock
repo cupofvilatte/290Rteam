@@ -7,6 +7,7 @@
     "npm:firebase@^11.0.2": "11.0.2_@firebase+app@0.10.16_@firebase+app-compat@0.2.46_@firebase+app-types@0.9.3",
     "npm:seedrandom@^3.0.5": "3.0.5",
     "npm:vite@*": "5.4.9",
+    "npm:vite@^5.4.11": "5.4.11_@types+node@22.5.4",
     "npm:vite@^5.4.9": "5.4.9"
   },
   "jsr": {
@@ -18,7 +19,7 @@
     "@deno/vite-plugin@1.0.0_vite@5.4.9": {
       "integrity": "sha512-Q9UeWqs3s7B5lqzu1Z5QrzYAzqTj3+F9YW17tWobGRbT2G40ihwis6zK/+QgMgcG4fm3IqdIfXmpQYhkZpdMfw==",
       "dependencies": [
-        "vite"
+        "vite@5.4.9"
       ]
     },
     "@esbuild/aix-ppc64@0.21.5": {
@@ -779,6 +780,16 @@
     "undici-types@6.19.8": {
       "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
     },
+    "vite@5.4.11_@types+node@22.5.4": {
+      "integrity": "sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==",
+      "dependencies": [
+        "@types/node@22.5.4",
+        "esbuild",
+        "fsevents",
+        "postcss",
+        "rollup"
+      ]
+    },
     "vite@5.4.9": {
       "integrity": "sha512-20OVpJHh0PAM0oSOELa5GaZNWeDjcAvQjGXy2Uyr+Tp+/D2/Hdz6NLgpJLsarPTA2QJ6v8mX2P1ZfbsSKvdMkg==",
       "dependencies": [
@@ -832,6 +843,12 @@
       "npm:firebase@^11.0.2",
       "npm:seedrandom@^3.0.5",
       "npm:vite@^5.4.9"
-    ]
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:@deno/vite-plugin@1",
+        "npm:vite@^5.4.11"
+      ]
+    }
   }
 }
