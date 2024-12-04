@@ -1,172 +1,172 @@
 [
-    {
-      "question": "When is Thanksgiving celebrated in the United States?",
+  {
+      "question": "When is Dino-Giving celebrated in the Prehistoric Era?",
       "options": {
-        "A": "The first Thursday of November",
-        "B": "The second Monday of November",
-        "C": "The fourth Thursday of November",
-        "D": "The last Friday of November"
+          "A": "The first Tuesday of the Jurassic period",
+          "B": "The third Saturday of the Mesozoic era",
+          "C": "The fourth Thursday of the Triassic period",
+          "D": "The last Friday of the Cretaceous period"
       },
       "answer": "C"
-    },
-    {
-      "question": "What is a traditional Thanksgiving dish?",
+  },
+  {
+      "question": "What is a traditional Dino-Giving dish?",
       "options": {
-        "A": "Sushi",
-        "B": "Turkey",
-        "C": "Spaghetti",
-        "D": "Tacos"
+          "A": "Velociraptor Venison",
+          "B": "Ptero-Pumpkin Pie",
+          "C": "Triceratops Tofu",
+          "D": "Turkey"
       },
-      "answer": "B"
-    },
-    {
-      "question": "Which U.S. President declared Thanksgiving a national holiday?",
+      "answer": "D"
+  },
+  {
+      "question": "Which famous dino-leader declared Dino-Giving a prehistoric holiday?",
       "options": {
-        "A": "George Washington",
-        "B": "Abraham Lincoln",
-        "C": "Thomas Jefferson",
-        "D": "Franklin D. Roosevelt"
-      },
-      "answer": "B"
-    },
-    {
-      "question": "How long was the first Thanksgiving?",
-      "options": {
-        "A": "10 Days",
-        "B": "3 Days",
-        "C": "1 Day",
-        "D": "5 Days"
-      },
-      "answer": "B"
-    },
-    {
-      "question": "How many places in the US are named Turkey?",
-      "options": {
-        "A": "3",
-        "B": "1",
-        "C": "2",
-        "D": "0"
-      },
-      "answer": "A"
-    },
-    {
-      "question": "What Native American tribe was present at the first Thanksgiving?",
-      "options": {
-        "A": "Cherokee",
-        "B": "Navajo",
-        "C": "Wampanoag",
-        "D": "Sioux"
+          "A": "Tyrannosaurus Rex",
+          "B": "Brontosaurus Bigheart",
+          "C": "Diplodocus Lincoln",
+          "D": "Stegosaurus Roosevelt"
       },
       "answer": "C"
-    },
-    {
-      "question": "Which department store is known for sponsoring the famous Thanksgiving Day Parade in New York City?",
+  },
+  {
+      "question": "How long was the first Dino-Giving feast?",
       "options": {
-        "A": "Macy's",
-        "B": "Saks Fifth Avenue",
-        "C": "Bloomingdale's",
-        "D": "Nordstrom"
-      },
-      "answer": "A"
-    },
-    {
-      "question": "What year was the first Macy's Thanksgiving Day Parade?",
-      "options": {
-        "A": "1924",
-        "B": "1910",
-        "C": "1945",
-        "D": "1930"
-      },
-      "answer": "A"
-    },
-    {
-      "question": "Which state produces the most turkeys in the U.S.?",
-      "options": {
-        "A": "Minnesota",
-        "B": "California",
-        "C": "Arkansas",
-        "D": "North Carolina"
-      },
-      "answer": "A"
-    },
-    {
-      "question": "What is the name of the ship that brought the Pilgrims to America?",
-      "options": {
-        "A": "Mayflower",
-        "B": "Santa Maria",
-        "C": "Pinta",
-        "D": "Nina"
-      },
-      "answer": "A"
-    },
-    {
-      "question": "Which U.S. President started the tradition of pardoning a turkey?",
-      "options": {
-        "A": "Ronald Reagan",
-        "B": "John F. Kennedy",
-        "C": "George H. W. Bush",
-        "D": "Harry Truman"
-      },
-      "answer": "C"
-    },
-    {
-      "question": "What is the average weight of a Thanksgiving turkey?",
-      "options": {
-        "A": "8 pounds",
-        "B": "16 pounds",
-        "C": "20 pounds",
-        "D": "25 pounds"
+          "A": "10 Days",
+          "B": "3 Days",
+          "C": "1 Day",
+          "D": "5 Days"
       },
       "answer": "B"
-    },
-    {
-      "question": "In what year did Congress make Thanksgiving an official federal holiday?",
+  },
+  {
+      "question": "How many places in the Prehistoric World are named Dino-Turkey?",
       "options": {
-        "A": "1863",
-        "B": "1870",
-        "C": "1941",
-        "D": "1950"
+          "A": "3",
+          "B": "1",
+          "C": "2",
+          "D": "0"
+      },
+      "answer": "A"
+  },
+  {
+      "question": "What herbivorous dino clan attended the first Dino-Giving?",
+      "options": {
+          "A": "Triceratops",
+          "B": "Ankylosaurus",
+          "C": "Stegosaurus",
+          "D": "Iguanodon"
+      },
+      "answer": "A"
+  },
+  {
+      "question": "Which dino-department store sponsors the famous Dino-Giving Parade?",
+      "options": {
+          "A": "Dino's",
+          "B": "Saks Fifth Scale",
+          "C": "Bronto-Mart",
+          "D": "Jurassic Junction"
+      },
+      "answer": "A"
+  },
+  {
+      "question": "What year was the first Dino-Giving Parade?",
+      "options": {
+          "A": "1924 BCE",
+          "B": "1910 BCE",
+          "C": "1945 BCE",
+          "D": "1930 BCE"
+      },
+      "answer": "A"
+  },
+  {
+      "question": "Which dino species produces the most turkeys for Dino-Giving?",
+      "options": {
+          "A": "Tyrannosaurus",
+          "B": "Velociraptor",
+          "C": "Utahraptor",
+          "D": "Troodon"
+      },
+      "answer": "D"
+  },
+  {
+      "question": "What is the name of the ship that brought Dino settlers to Prehistoria?",
+      "options": {
+          "A": "Dino-Flower",
+          "B": "Santa Scales",
+          "C": "Dino-Pinta",
+          "D": "Dino-Nina"
+      },
+      "answer": "A"
+  },
+  {
+      "question": "Which dino started the tradition of pardoning a turkey?",
+      "options": {
+          "A": "Pteranodon Reagan",
+          "B": "Stegosaurus Kennedy",
+          "C": "Velociraptor Bush",
+          "D": "Diplodocus Truman"
       },
       "answer": "C"
-    },
-    {
-      "question": "Which traditional Thanksgiving dessert traces its origins to the Pilgrims?",
+  },
+  {
+      "question": "What is the average weight of a Dino-Giving turkey?",
       "options": {
-        "A": "Pumpkin Pie",
-        "B": "Apple Pie",
-        "C": "Pecan Pie",
-        "D": "Cranberry Tart"
-      },
-      "answer": "A"
-    },
-    {
-      "question": "Which bird did Benjamin Franklin suggest should be the national bird of the United States instead of the Bald Eagle?",
-      "options": {
-        "A": "Turkey",
-        "B": "Hawk",
-        "C": "Swan",
-        "D": "Owl"
-      },
-      "answer": "A"
-    },
-    {
-      "question": "What country also celebrates Thanksgiving in October?",
-      "options": {
-        "A": "Canada",
-        "B": "Mexico",
-        "C": "Australia",
-        "D": "United Kingdom"
-      },
-      "answer": "A"
-    },
-    {
-      "question": "What is the gelatinous, can-shaped dish often served at Thanksgiving?",
-      "options": {
-        "A": "Jello Salad",
-        "B": "Cranberry Sauce",
-        "C": "Aspic",
-        "D": "Mousse"
+          "A": "8 pounds",
+          "B": "16 pounds",
+          "C": "20 pounds",
+          "D": "25 pounds"
       },
       "answer": "B"
-    }
+  },
+  {
+      "question": "In what year did Congress of the Dino World make Dino-Giving official?",
+      "options": {
+          "A": "1863 BCE",
+          "B": "1870 BCE",
+          "C": "1941 BCE",
+          "D": "1950 BCE"
+      },
+      "answer": "C"
+  },
+  {
+      "question": "Which traditional Dino-Giving dessert is loved by dinos everywhere?",
+      "options": {
+          "A": "Ptero-Pumpkin Pie",
+          "B": "Apple-saurus Pie",
+          "C": "Cretaceous Cranberry Tart",
+          "D": "Dino-Pecan Pie"
+      },
+      "answer": "A"
+  },
+  {
+      "question": "Which bird did Pterodactyl Franklin suggest should be the national bird of the Dino World instead of the Archaeopteryx?",
+      "options": {
+          "A": "Turkey",
+          "B": "Pterosaur",
+          "C": "Raptor",
+          "D": "Owl"
+      },
+      "answer": "A"
+  },
+  {
+      "question": "What prehistoric country celebrates Dino-Giving in October?",
+      "options": {
+          "A": "Dino-Canada",
+          "B": "Dino-Mexico",
+          "C": "Dino-Australia",
+          "D": "Dino-United Kingdom"
+      },
+      "answer": "A"
+  },
+  {
+      "question": "What gelatinous, can-shaped dish is served at Dino-Giving?",
+      "options": {
+          "A": "Dino-Jello",
+          "B": "Cretaceous Cranberry Sauce",
+          "C": "Dino-Aspic",
+          "D": "Dino-Mousse"
+      },
+      "answer": "B"
+  }
 ]
