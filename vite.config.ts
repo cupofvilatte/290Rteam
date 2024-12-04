@@ -13,7 +13,7 @@ export default defineConfig({
       input: {
         main: 'src/index.html', 
         gratitude: 'src/gratitude.html',
-        // quiz: 'src/quiz.html',
+        quiz: 'src/quiz.html',
         // recipes: 'src/gratitude.html'
       }
     }
