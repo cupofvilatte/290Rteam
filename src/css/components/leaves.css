@@ -1,7 +1,9 @@
 #leaf-area {
   position: relative;
+
   overflow: hidden;
   min-width: 600px;
+  width: 100%;
   height: 600px;
   background-image: url("https://www.misskatecuttables.com/uploads/shopping_cart/8340/large_fall-tree.png");
   background-size: contain;
