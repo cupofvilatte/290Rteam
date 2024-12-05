@@ -21,7 +21,7 @@ body, h1, form, fieldset, legend, label, button, span {
   /* Header */
   h1 {
     font-size: 2.5rem;
-    color: #16a085; /* Teal color */
+    color: var(--header-color); /* Teal color */
     text-align: center;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px #7f8c8d; /* Subtle shadow */
@@ -95,7 +95,7 @@ body, h1, form, fieldset, legend, label, button, span {
   
   /* Submit Button */
   button.view-results {
-    background-color: #e67e22; /* Vibrant orange */
+    background-color: var(--button-color); /* Vibrant orange */
     color: #fff; /* White text */
     border: none;
     border-radius: 5px;
@@ -107,7 +107,7 @@ body, h1, form, fieldset, legend, label, button, span {
   }
   
   button.view-results:hover {
-    background-color: #d35400; /* Darker orange */
+    background-color: var(--button-hover-color); /* Darker orange */
   }
   
   /* Dinosaur Images Section */
