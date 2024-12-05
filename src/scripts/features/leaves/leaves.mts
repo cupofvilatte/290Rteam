@@ -4,12 +4,9 @@ const leaves: [string, number][] = []
 const wordCounts: { [key: string]: number } = {}
 const updateWordCounts = (words: string[]) => words.forEach(word => wordCounts[word] = word in wordCounts ? wordCounts[word] + 1 : 1);
 
-// For Testing
-const gratitudeWords = [ "Family", "Friends", "Health", "Love", "Food", "Shelter", "Happiness", "Freedom", "Nature", "Life", "Family", "Friends", "Health", "Love", "Support", "Kindness", "Opportunities", "Education", "Memories", "Community", "Music", "Laughter", "Comfort", "Peace", "Adventure", "Sunshine", "Time", "Pets", "Dreams", "Books", "Hope", "Wisdom", "Family", "Friends", "Health", "Love", "Food", "Shelter", "Happiness", "Gratitude", "Healing", "Growth", "Faith", "Art", "Technology", "Kindness", "Nature", "Family", "Friends", "Health" ];
 
 function initGratitudeTracker() {
     initWordAdder();
-    updateWordCounts(gratitudeWords); // FOR DEBUGGING -- REMOVE LATER
     updateLeaves();
     (document.getElementById('gratitude-submit') as HTMLButtonElement).addEventListener('click', updateGratitudeList)
 }
@@ -29,11 +26,15 @@ function updateLeaves() {
     leaves.splice(0, leaves.length, ...newLeaves);
 }
 
+function clearLeafList() {
+    leaves.length = 0;
+    Object.keys(wordCounts).forEach(key => delete wordCounts[key]);
+}
 
 // Leaf Font Size
 const minFont = 16;
-const maxFont = 30;
-const calcFontSize = (wordFrequency: number, minFreq: number, maxFreq: number) => minFont + (wordFrequency - minFreq) / (maxFreq - minFreq) * (maxFont - minFont);
+const maxFont = 26;
+const calcFontSize = (wordFrequency: number, minFreq: number, maxFreq: number) => minFreq === maxFreq ? minFont : minFont + (wordFrequency - minFreq) / (maxFreq - minFreq) * (maxFont - minFont);
 
 
-export { leaves, initGratitudeTracker, updateGratitudeList }
+export { leaves, initGratitudeTracker, updateGratitudeList, clearLeafList, updateWordCounts }
