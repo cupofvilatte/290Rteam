@@ -14,6 +14,7 @@ function initWordAdder() {
 
 function addWord() {
     if (wordInput.value === '') return;
+    if (wordInput.value.length > 12) return;
     addListItem(wordList, wordInput.value);
     wordInput.value = '';
 }
