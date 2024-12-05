@@ -10,8 +10,14 @@
 /* @import "layout/footer.css" layer(layout); */
 @import "layout/quiz.css" layer(layout);
 
+@import "layout/recipe-page.css" layer(layout);
+
+@import "layout/quiz.css" layer(layout);
+
 @import "components/leaves.css" layer(components);
 
 @import "utilities/gratitude-page.css" layer(utilities);
 
+
 /* Add more layers as needed */
+@import "components/recipe-components.css" layer(components);
