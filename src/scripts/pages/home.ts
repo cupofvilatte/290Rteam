@@ -1,15 +1,32 @@
 import { ThanksgivingCountdown } from './thanksgivingClock.ts';
 
-const container = document.createElement('div');
-container.className = 'thanksgiving-home';
-
-function initializePage(): void {
-    // Create header section
+// Function to create the header
+function createHeader(): HTMLElement {
     const header = document.createElement('header');
     header.innerHTML = `
-        <h1 class="title"> Deno Thanksgiving </h1>
+        <h1 class="title">Deno Thanksgiving</h1>
         <p class="subtitle">Join our prehistoric celebration!</p>
     `;
+    return header;
+}
+
+// Function to create the footer
+function createFooter(): HTMLElement {
+    const footer = document.createElement('footer');
+    footer.innerHTML = `
+        <p>&copy; 2024 Deno Thanksgiving Celebration</p>
+    `;
+    return footer;
+}
+
+// Main function to initialize the page
+function initializePage(): void {
+    const container = document.createElement('div');
+    container.className = 'thanksgiving-home';
+
+    // Create and append header
+    const header = createHeader();
+    container.appendChild(header);
 
     // Create countdown section
     const countdownSection = document.createElement('div');
@@ -51,9 +68,12 @@ function initializePage(): void {
     `;
 
     // Append all sections
-    container.appendChild(header);
     container.appendChild(countdownSection);
     container.appendChild(content);
+
+    // Create and append footer
+    const footer = createFooter();
+    container.appendChild(footer);
 
     // Append container to body
     document.body.appendChild(container);
@@ -62,6 +82,7 @@ function initializePage(): void {
     startCountdown();
 }
 
+// Function to start the countdown
 function startCountdown(): void {
     const countdown = new ThanksgivingCountdown();
     countdown.startCountdown((time) => {
@@ -76,6 +97,7 @@ function startCountdown(): void {
     });
 }
 
+// Function to show Thanksgiving message
 function showThanksgivingMessage(): void {
     const countdownDisplay = document.querySelector('.countdown-display');
     if (countdownDisplay) {
@@ -83,5 +105,5 @@ function showThanksgivingMessage(): void {
     }
 }
 
-// Initialize the page
+// Initialize the page when the script is loaded
 initializePage();
