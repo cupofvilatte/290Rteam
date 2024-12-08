@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinogiving Quiz</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="scripts/pages/quiz/quiz.js" defer></script>
+    <script type="module" src="scripts/templates/populateHeaderandFooter.ts" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Dynamically Inserted Header Here -->
+    </header>
+    <h1> 🦕 Dinogiving Quiz 🦖</h1>
+    <div class="quiz-container">
+      <div class="quiz-section">
+        <form id="quiz-form">
+          <!-- Questions will be inserted dynamically here -->
+          <span id="myresults" class="my-results">My results will appear here</span>
+          <button class="view-results" type="button" onclick="returnScore()">Submit</button>
+        </form>
+      </div>
+      <div class="dino-images">
+        <img src="https://media.istockphoto.com/id/1390038554/photo/tyrannosaurus-from-the-cretaceous-era-3d-illustration.jpg?s=612x612&w=0&k=20&c=XHmc7HuHRnwwF2I3D_eV69n_GEz6lof_FtpHQ4w_Ixk=" alt="Dinosaur 1">
+        <img src="https://thumbs.dreamstime.com/b/tyrannosaurus-rex-dinosaur-fantasy-landscape-ai-created-content-tyrannosaurus-rex-dinosaur-fantasy-landscape-design-324081557.jpg" alt="Dinosaur 2">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/007/066/635/small_2x/giganotosaurus-dinosaur-cartoon-colored-clipart-free-vector.jpg" alt="Dinosaur 3">
+      </div>
+    </div>
+    <footer>
+      <!-- Dynamically Insert Footer Here -->
+    </footer>
+  </body>
+</html>

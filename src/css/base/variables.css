@@ -1,0 +1,18 @@
+:root {
+    --text-on-color: #dcecdc;
+    --background-color: #fef5e7;
+}
+
+header, nav, footer {
+    --nav-color: #863e03;
+    --nav-link-color: #16a085;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    --header-color: #16a085;
+}
+
+a, button {
+    --button-color: #e67e22;
+    --button-hover-color: #d35400;
+}

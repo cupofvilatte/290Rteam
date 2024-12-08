@@ -7,14 +7,26 @@
 
 ## Setup repo for Development
 
-[Install Deno](https://docs.deno.com/runtime/getting_started/installation/)
+1. [Install Deno](https://docs.deno.com/runtime/getting_started/installation/)
 
-Install Dependencies
+2. Install Dependencies and Modules
 ```bash
-# Install modules
 deno install --allow-scripts
+```
 
-# Develop Site
+3. Run in development mode
+```bash
 deno run dev
 ```
 
+## Testing Deployment and Minification
+
+1. Run Build Command
+```bash
+deno run build
+```
+
+2. Run Preview Command
+```bash
+deno run preview
+```

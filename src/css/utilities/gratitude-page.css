@@ -1,0 +1,31 @@
+
+#gratitude-input, #gratitude-page main > button {
+    margin: 10px auto;
+}
+
+#gratitude-page button {
+    border: none;
+    border-radius: 2px;
+    padding: 4px;
+    background-color: var(--button-color);
+}
+
+#add-word, #gratitude-input {
+    display: inline;
+}
+
+#gratitude-page button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.gratitude-list {
+    width: 300px;
+}
+
+.gratitude-list li {
+    display: inline-block;
+}
+
+.delete-btn {
+    display: inline;
+}

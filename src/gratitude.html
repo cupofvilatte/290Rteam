@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gratitude</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="scripts/pages/gratitude.mts" type="module" defer></script>
+    <script type="module" src="scripts/templates/populateHeaderandFooter.ts" defer></script>
+  </head>
+  <body id="gratitude-page">
+    <header>
+      <!-- Dynamically Inserted Header Here -->
+    </header>
+    <h1>Gratitude Tree</h1>
+
+    <main>
+        <label for="gratitude-input">Type Something you are grateful for:</label>
+        <input id="gratitude-input" type="text" name="gratitude-input" placeholder="one word at a time" maxlength="12"></input>
+        <button id="add-word">Add Word</button>
+        <ol class="gratitude-list">
+          <!-- List to show submitted Itemes -->
+        </ol>
+  
+        <button id="clear-list">Clear List</button>
+        <button id="gratitude-submit">Add to List</button>
+
+    </main>
+ 
+    <div id="leaf-area">
+      <!-- Leaves Dynamically Animated Here -->
+    </div>
+
+    <footer>
+      <!-- Dynamically Insert Footer Here -->
+    </footer>
+  </body>
+</html>
+
