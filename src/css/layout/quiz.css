@@ -6,8 +6,7 @@ body, h1, form, fieldset, legend, label, button, span {
   }
   
   body {
-    font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
-    background-color: #fef5e7; /* Pale yellow for warmth */
+    background-color: var(--background-color); /* Pale yellow for warmth */
     color: #2c3e50; /* Deep blue-gray for text */
     line-height: 1.5;
     display: flex;
@@ -15,7 +14,6 @@ body, h1, form, fieldset, legend, label, button, span {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 20px;
   }
   
   /* Header */
@@ -34,9 +32,9 @@ body, h1, form, fieldset, legend, label, button, span {
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
     max-width: 900px;
-    margin-top: 20px;
+    margin: 20px;
   }
   
   /* Quiz Section */

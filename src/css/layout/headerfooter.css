@@ -1,0 +1,32 @@
+header, footer {
+    height: 100px;
+    background-color: var(--nav-color);
+    width: 100%;
+}
+
+header {
+    & nav, ul {
+        height: 100%;
+    }
+    & ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        & a {
+            text-decoration: none;
+            color: var(--nav-link-color);
+        }
+        & a:hover {
+            text-decoration: underline;
+            color: var(--button-hover-color);
+        }
+    }
+}
+
+
+footer p {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--text-on-color);
+}
