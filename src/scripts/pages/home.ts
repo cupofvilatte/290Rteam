@@ -1,32 +1,9 @@
 import { ThanksgivingCountdown } from './thanksgivingClock.ts';
 
-// Function to create the header
-function createHeader(): HTMLElement {
-    const header = document.createElement('header');
-    header.innerHTML = `
-        <h1 class="title">Deno Thanksgiving</h1>
-        <p class="subtitle">Join our prehistoric celebration!</p>
-    `;
-    return header;
-}
-
-// Function to create the footer
-function createFooter(): HTMLElement {
-    const footer = document.createElement('footer');
-    footer.innerHTML = `
-        <p>&copy; 2024 Deno Thanksgiving Celebration</p>
-    `;
-    return footer;
-}
-
 // Main function to initialize the page
 function initializePage(): void {
-    const container = document.createElement('div');
-    container.className = 'thanksgiving-home';
-
-    // Create and append header
-    const header = createHeader();
-    container.appendChild(header);
+    // Select the main element
+    const main = document.querySelector('main') as HTMLElement;
 
     // Create countdown section
     const countdownSection = document.createElement('div');
@@ -54,29 +31,24 @@ function initializePage(): void {
     `;
 
     // Create content section
-    const content = document.createElement('main');
+    const content = document.createElement('div');
+    content.className = 'dino-content';
     content.innerHTML = `
-        <div class="dino-content">
-            <h2>🦖 Prehistoric Feast</h2>
-            <p>Get ready for the most epic Thanksgiving celebration since the Cretaceous period!</p>
-            <div class="features">
-                <div class="feature">🌿 Plant-eating dinos welcome!</div>
-                <div class="feature">🍖 Meat-eating dinos welcome too!</div>
-                <div class="feature">🦃 Turkey-sized portions for all!</div>
-            </div>
+        <h2>🦖 Prehistoric Feast</h2>
+        <p>Get ready for the most epic Thanksgiving celebration since the Cretaceous period!</p>
+        <div class="features">
+            <div class="feature">🌿 Plant-eating dinos welcome!</div>
+            <div class="feature">🍖 Meat-eating dinos welcome too!</div>
+            <div class="feature">🦃 Turkey-sized portions for all!</div>
         </div>
     `;
 
-    // Append all sections
-    container.appendChild(countdownSection);
-    container.appendChild(content);
+    // Clear any existing content in the main tag
+    main.innerHTML = '';
 
-    // Create and append footer
-    const footer = createFooter();
-    container.appendChild(footer);
-
-    // Append container to body
-    document.body.appendChild(container);
+    // Append the countdown section and content to the main tag
+    main.appendChild(countdownSection);
+    main.appendChild(content);
 
     // Start countdown
     startCountdown();
