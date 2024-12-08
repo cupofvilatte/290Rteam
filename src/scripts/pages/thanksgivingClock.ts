@@ -22,16 +22,19 @@ export class ThanksgivingCountdown {
     const november = 10; 
     const fourthThursday = 4;
 
-    const firstOfNovember = new Date(year, november, 1);
-    const dayOfWeek = firstOfNovember.getDay();
-    const firstThursday = 1 + ((11 - dayOfWeek) % 7);
-    const thanksgivingDate = firstOfNovember.getDate() + firstThursday + (fourthThursday - 1) * 7;
-    
-    const thanksgiving = new Date(year, november, thanksgivingDate);
-    
-    return now.getTime() > thanksgiving.getTime() 
-      ? new Date(year + 1, november, thanksgivingDate)
-      : thanksgiving;
+    const calculateThanksgiving = (year: number): Date => {
+      const firstOfNovember = new Date(year, november, 1);
+      const dayOfWeek = firstOfNovember.getDay(); // 0 = Sunday, ..., 6 = Saturday
+      const offset = (4 - dayOfWeek + 7) % 7; // Days until the first Thursday
+      const firstThursday = 1 + offset;
+      const thanksgivingDate = firstThursday + (fourthThursday - 1) * 7;
+      return new Date(year, november, thanksgivingDate);
+    };
+  
+    const thanksgivingThisYear = calculateThanksgiving(year);
+    return now.getTime() > thanksgivingThisYear.getTime()
+      ? calculateThanksgiving(year + 1)
+      : thanksgivingThisYear;
   }
 
   public getTimeRemaining(): CountdownTime {
