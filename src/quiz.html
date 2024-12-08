@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dinogiving Quiz</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script src="scripts/pages/quiz/quiz.js" defer></script>
+    <script type="module" src="scripts/pages/quiz/quiz.js" defer></script>
     <script type="module" src="scripts/templates/populateHeaderandFooter.ts" defer></script>
   </head>
   <body>
@@ -18,7 +18,7 @@
         <form id="quiz-form">
           <!-- Questions will be inserted dynamically here -->
           <span id="myresults" class="my-results">My results will appear here</span>
-          <button class="view-results" type="button" onclick="returnScore()">Submit</button>
+          <button class="view-results" type="button">Submit</button>
         </form>
       </div>
       <div class="dino-images">
