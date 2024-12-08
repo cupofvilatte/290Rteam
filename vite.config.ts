@@ -4,6 +4,7 @@ import deno from '@deno/vite-plugin'
 // https://vite.dev/config/
 export default defineConfig({
   root: 'src',
+  base: '/290Rteam/',
   assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.webp', '**/*.avif'],
   build: {
     outDir: '../dist',

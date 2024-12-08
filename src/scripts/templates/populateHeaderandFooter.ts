@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
       header.innerHTML = `
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/quiz.html">Quiz</a></li>
-            <li><a href="/recipe-page.html">Recipes</a></li>
-            <li><a href="/gratitude.html">Gratitude</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="recipe-page.html">Recipes</a></li>
+            <li><a href="gratitude.html">Gratitude</a></li>
           </ul>
         </nav>
       `;
