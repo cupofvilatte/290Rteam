@@ -1,8 +1,12 @@
 .recipe-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 20px;
 }
 
 .recipe-container img {
     width: 70%;
+    display: block;
+    margin: 10px auto;
 }
