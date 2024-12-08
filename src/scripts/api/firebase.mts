@@ -22,3 +22,5 @@
 // const analytics = getAnalytics(app);
 
 
+// Add this package to deno.json if using above libraries
+// "firebase": "npm:firebase@^11.0.2",

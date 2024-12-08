@@ -11,7 +11,6 @@
   "nodeModulesDir": "auto",
   "imports": {
     "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.0",
-    "firebase": "npm:firebase@^11.0.2",
     "vite": "npm:vite@^5.4.9",
     "seedrandom": "npm:seedrandom@^3.0.5"
   }
