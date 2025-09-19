@@ -2,7 +2,7 @@
 
 ## Website Introduction
 
-
+Ever wanted a dino themed thanksgiving? Well explore our [site](https://cupofvilatte.github.io/290Rteam) with quizzes, recipes, and more.
 
 
 ## Setup repo for Development
